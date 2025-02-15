@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
+    <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
+    <title>Charlie's Portfolio</title>
+    <link rel="icon" href="/assets/computer-icon.png">
+    <style> 
+        header{
+          border-color: black;
+          border-style: solid;
+          display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- some background music -->
+    <audio autoplay loop>
+        <source src="/assets/Background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
+      </noscript>
+
+      <!-- title of my site -->
+      <header>
+        <h1>Charlie's Portfolio</h1>
+      </header>
+
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
+    <picture>
+        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="100" height="100">
+    </picture>
+
+    <hr>
+      
+    <!-- search bar -->
+    <search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
+
+    <!-- nav bar so we can navigate through each page -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/aboutme.html">About Me</a></li>
+            <li><a href="/html/projects.html">Projects</a></li>
+            <li><a href="/html/skills.html"><i><b>Skills</b></i></a></li>
+            <li><a href="/html/contactme.html">Contact Me</a></li>
+            <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+
+    <!-- main content for this page -->
+    <main>
+    <h1>Skills</h1>
+    
+    <!-- I put all my skills within this div -->
+    <div id="skills">
+
+        <!-- using fieldset I wrapped each section of my skills in separate boxes -->
+        <!-- Front-end fieldset -->
+        <fieldset>
+          <legend>Front-End</legend>
+            <dl>
+                <dt><abbr title="HyperText Markup Language">HTML</abbr></dt>
+                <dd>Mark up language to structure content on the web</dd>
+                <dt><abbr title="Cascading Style Sheets">CSS</abbr></dt>
+                <dd>Style sheet language used to describe the site written in HTML or XML</dd>
+                <dt>JavaScript</dt>
+                <dd>A programming language used to create dynamic and interactive effects within web browsers</dd>
+            </dl>
+        </fieldset>
+        
+        <!-- Back-end fieldset -->
+        <fieldset>
+          <legend>Back-End Skills</legend>
+            <dl>
+                <dt>Node.js</dt>
+                <dd>A JavaScript that allows JavaScript to be used for building scalable and high-performance web applications</dd>
+                <dt>Java</dt>
+                <dd>A versatile, object-orientated language designed for building platform-independent applications that can run on any device</dd>
+                <dt>C</dt>
+                <dd>A powerful, low-level language that provides efficient memory management and is widely used for system software</dd>
+                <dt>Python</dt>
+                <dd>A high-level, interpreted programming language ideal for web development, data analysis, artificial intelligence, and automation tasks</dd>
+                <dt>SystemVerilog</dt>
+                <dd>An extension of Verilog hardware description language that adds more features for hardware design, verification, and modeling</dd>
+            </dl>
+        </fieldset>
+        
+        <!-- Databases fieldset -->
+        <fieldset>
+            <legend>Databases</legend>
+                <dl>
+                    <dt>Postgre</dt>
+                    <dd>Open-source, relational database management system ideal for handling large-scale data and complex queries</dd>
+                    <dt>SQL</dt>
+                    <dd>A standard programming language used to manage and manipulate relational databases, allowing users to query, insert, update, and delete data efficiently</dd>
+                </dl>
+        </fieldset>
+
+        <!-- Software Development Methodologies fieldset -->
+        <fieldset>
+            <legend>Software Development Methodologies</legend>
+            <p><dfn>Agile</dfn>: A methodology that emphasizes flexiblity, collaboration, and customer feedback</p>
+            <p><dfn>CD/CI</dfn>: Meaning Continuous Delivery/Continuous Integration, which focuses on automating and streamlining the process of integrating and delivering software.</p>
+        </fieldset>
+        </div>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Charlie's website © 2025</p>
+    </footer>
+</body>
+</html>

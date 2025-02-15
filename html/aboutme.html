@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
+    <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
+    <title>Charlie's Portfolio</title>
+    <link rel="icon" href="/assets/computer-icon.png">
+    <link rel="stylesheet" href="/css/profile-card.css">
+    <style> 
+        header{
+          border-color: black;
+          border-style: solid;
+          display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- some background music -->
+    <audio autoplay loop>
+        <source src="/assets/Background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
+      </noscript>
+
+      <!-- smiley face made with canvas and some JS -->
+      <canvas id="smileyCanvas" width="150" height="150"></canvas>
+      <script>
+        const canvas = document.getElementById('smileyCanvas');
+        const ctx = canvas.getContext('2d');
+    
+        // Draw face
+        ctx.beginPath();
+        ctx.arc(75, 75, 60, 0, Math.PI * 2); // Face circle
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+
+        // Draw eyes
+        ctx.beginPath();
+        ctx.arc(50, 60, 8, 0, Math.PI * 2); // Left eye
+        ctx.arc(100, 60, 8, 0, Math.PI * 2); // Right eye
+        ctx.fillStyle = 'black';
+        ctx.fill();
+
+        // Draw mouth
+        ctx.beginPath();
+        ctx.arc(75, 80, 40, 0, Math.PI); // Smile (half circle)
+        ctx.fill();
+      </script>
+
+    <!-- title of my site -->
+      <header>
+        <h1>Charlie's Portfolio</h1>
+      </header>
+
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
+    <picture>
+        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="100" height="100">
+    </picture>
+
+    <hr>
+    
+    <!-- search bar -->
+    <search>
+        <form action="/search" method="get">
+          <label for="query">Search my portfolio:</label>
+          <input type="text" id="query" name="query" placeholder="Search...">
+          <button type="submit">Go</button>
+        </form>
+      </search>
+
+    <!-- nav bar so we can navigate through each page -->
+    <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/aboutme.html"><i><b>About Me</b></i></a></li>
+          <li><a href="/html/projects.html">Projects</a></li>
+          <li><a href="/html/skills.html">Skills</a></li>
+          <li><a href="/html/contactme.html">Contact Me</a></li>
+          <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+    
+    <!-- main content of this page -->
+    <main>
+        <h1>About Me</h1>
+
+        <!-- use a custom html tag called profile-card to make the css profile card for myself -->
+        <section class="profile">
+            <profile-card>
+            <div class="profile-content">
+                <img src="/assets/Charlie's-pic.jpg" alt="Profile Picture" class="profile-img">
+                <div class="profile-info">
+                <h2 class="name">Charlie Trinh</h2>
+                <p class="title">Student at UCSD</p>
+                <p class="bio">A passionate Computer Scientist striving to learn and improve my skills.</p>
+                </div>
+            </div>
+            </profile-card>
+    
+        </section>
+
+        <!-- use svg to create a timeline of my education -->
+        <div class="Timeline">
+            <svg width="500" height="100">
+                <!-- Timeline Line -->
+                <line x1="50" y1="50" x2="450" y2="50" stroke="gray" stroke-width="2"/>
+            
+                <!-- Milestones -->
+                <circle cx="150" cy="50" r="10" fill="blue"/>
+                <circle cx="300" cy="50" r="10" fill="green"/>
+                <circle cx="450" cy="50" r="10" fill="orange"/>
+            
+                <!-- Labels -->
+                <text x="71" y="80" font-family="Arial" font-size="14" fill="black">High School(2017-2021)</text>
+                <text x="235" y="80" font-family="Arial" font-size="14" fill="black">College(2021-Present)</text>
+                <text x="435" y="80" font-family="Arial" font-size="14" fill="black">TBD...</text>
+            </svg>
+        </div>
+
+        <!-- used blockquote tag to write out this code as well as kbd tag to type out keyboard presses -->
+        <blockquote>
+            "It's all <kbd>ctrl</kbd> + <kbd>c</kbd> and <kbd>ctrl</kbd> + <kbd>v</kbd> until something explodes"
+            <cite>— Random Computer Scientist</cite>
+        </blockquote>
+
+        <!-- section to talk about my personality -->
+        <section class="Enjoyments">
+            <h2>Some things I enjoy</h2>
+            <ul>
+                <li><p>I love to <strong>learn new things</strong></p></li>
+                <li><p><strong>Solving problems</strong> and finding more <strong>efficent solutions</strong></p></li>
+                <li><p><strong>Motivated</strong> to improve myself</p></li>
+            </ul>
+        </section>
+
+        <!-- section to talk about my hobbies -->
+        <section class="Hobbies">
+            <h2>Hobbies</h2>
+                <details>
+                    <summary>Job searching</summary>
+                    <p>Still looking!</p>
+                </details>
+            
+                <details>
+                    <summary>Listening to music (currently my favorite song)</summary>
+                    <!-- removed style for this iframe width="350" height="152" this was the dimensions so i can use them in the future -->
+                    <iframe src="https://open.spotify.com/embed/track/30oddeV4b75MDQ6JvkAXCW?utm_source=generator"></iframe>
+                </details>
+                
+                <details>
+                    <summary>Playing video games</summary>
+                    <p>Final Fantasy</p>
+                    <p>Minecraft</p>
+                </details>
+        </section>
+
+    </main>
+    <hr>
+
+    <footer>
+        <p>Charlie's website © 2025</p>
+    </footer>
+
+</body>
+
+</html>
