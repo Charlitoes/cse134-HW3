@@ -8,21 +8,12 @@
     <meta name="author" content="Charlie Trinh">
     <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
     <title>Charlie's Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet_main.css">
     <link rel="icon" href="assets/computer-icon.png">
-    <style> 
-      header{
-        border-color: black;
-        border-style: solid;
-        display: inline-block;
-      }
-    </style>
   </head>
 
   <body>
-    <!-- some background music -->
-    <audio autoplay loop>
-      <source src="/assets/Background-music.mp3" type="audio/mp3">
-    </audio>
+
 
     <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
     <noscript>
@@ -33,50 +24,29 @@
     <hello-world></hello-world>
     <script src="/js/hello-world.js"></script>
 
-    <!-- smiley face made with svg -->
-    <div class="smiley">
-    <svg width="150" height="150" viewBox="0 0 150 150">
-      <!-- Face -->
-      <circle cx="75" cy="75" r="50" fill="yellow" stroke="black" stroke-width="3"/>
-  
-      <!-- Left Eye -->
-      <circle cx="55" cy="60" r="5" fill="black"/>
-      
-      <!-- Right Eye -->
-      <circle cx="95" cy="60" r="5" fill="black"/>
-      
-      <!-- Smile -->
-      <path d="M50,90 Q75,120 100,90" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
-    </svg>
-  </div>
 
+    <section id="top">
+
+            <!-- UCSD logo and some backup images incase if one doesnt load -->
+            <picture>
+              <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+              <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+              <img src="/assets/UCSD-logo.jpeg" alt="Image of UCSD logo" width="150" height="150">
+            </picture>
     <!-- title of my site -->
     <header>
       <h1>Charlie's Portfolio</h1>
     </header>
 
-      <!-- UCSD logo and some backup images incase if one doesnt load -->
-      <picture>
-        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
-        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
-        <img src="/assets/UCSD-logo.jpeg" alt="Image of UCSD logo" width="100" height="100">
-      </picture>
+    </section>
 
       <hr>
 
-          <!-- search bar -->
-          <search>
-            <form action="/search" method="get">
-              <label for="query">Search my portfolio:</label>
-              <input type="text" id="query" name="query" placeholder="Search...">
-              <button type="submit">Go</button>
-            </form>
-          </search>
 
     <!-- nav bar so we can navigate through each page -->
     <nav>
       <ul>
-        <li><a href="/index.html"><i><b>Home</b></i></a></li>
+        <li><a href="/index.html"><b>Home</b></a></li>
         <li><a href="html/aboutme.html">About Me</a></li>
         <li><a href="html/projects.html">Projects</a></li>
         <li><a href="html/skills.html">Skills</a></li>
@@ -99,7 +69,9 @@
             console.log("Hello, world!");
         }
         </code></pre>
-      
+
+      <br>
+
       <!-- using MathML to create Einstein's formula (EC) -->
       <math>
         <mrow>
@@ -121,9 +93,9 @@
     <aside>
       <h2>Socials</h2>
       <address>
-        <a href="https://github.com/Charlitoes">Github</a>
+        <a href="https://github.com/Charlitoes" target="_blank">Github</a>
         <br>
-        <a href="https://www.linkedin.com/in/charlie-trinh/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/charlie-trinh/" target="_blank">LinkedIn</a>
         <br>
         <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
         <br>

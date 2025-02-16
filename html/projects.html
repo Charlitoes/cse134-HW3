@@ -8,56 +8,38 @@
     <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
     <title>Charlie's Portfolio</title>
     <link rel="icon" href="/assets/computer-icon.png">
-    <style> 
-        header{
-          border-color: black;
-          border-style: solid;
-          display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/stylesheet_main.css">
 </head>
 
 <body>
-    <!-- some background music -->
-    <audio autoplay loop>
-        <source src="/assets/Background-music.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
 
     <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
     <noscript>
         <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view interactive content.</p>
       </noscript>
 
-      <!-- title of my site -->
-      <header>
-        <h1>Charlie's Portfolio</h1>
-      </header>
+      <section id="top">
 
     <!-- UCSD logo and some backup images incase if one doesnt load -->
     <picture>
         <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
         <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
-        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="100" height="100">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="150" height="150">
     </picture>
 
+          <!-- title of my site -->
+          <header>
+            <h1>Charlie's Portfolio</h1>
+          </header>
+</section>
     <hr>
-      
-    <!-- search bar -->
-    <search>
-        <form action="/search" method="get">
-          <label for="query">Search my portfolio:</label>
-          <input type="text" id="query" name="query" placeholder="Search...">
-          <button type="submit">Go</button>
-        </form>
-      </search>
 
     <!-- nav bar so we can navigate through each page -->
     <nav>
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/html/aboutme.html">About Me</a></li>
-            <li><a href="/html/projects.html"><i><b>Projects</b></i></a></li>
+            <li><a href="/html/projects.html"><b>Projects</b></a></li>
             <li><a href="/html/skills.html">Skills</a></li>
             <li><a href="/html/contactme.html">Contact Me</a></li>
             <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
@@ -97,7 +79,7 @@
                         <td><a href="https://github.com/Eban-Covarrubias/miniMips_ComputerArchitecture">View Project</a></td>
                         <td>
                             <figure>
-                                <video controls>
+                                <video  width="400" controls>
                                     <source src="/assets/CSE141L_finalvideo.mp4" type="video/mp4">
                                     Your browser doesn't support the video tag
                                 </video>
@@ -114,7 +96,7 @@
                         <td><a href="https://cse110-sp24-group19.github.io/final-project/">View Project</a></td>
                         <td>
                             <figure>
-                                <video controls>
+                                <video  width="400" controls>
                                     <source src="/assets/Gen-Z-work-journal-vid.mp4" type="video/mp4">
                                     Your browser doesn't support the video tag
                                 </video>
@@ -126,6 +108,21 @@
             </table>
           </section>
     </main>
+<hr>
+
+    <!-- separate content from main -->
+    <aside>
+        <h2>Socials</h2>
+        <address>
+          <a href="https://github.com/Charlitoes" target="_blank">Github</a>
+          <br>
+          <a href="https://www.linkedin.com/in/charlie-trinh/" target="_blank">LinkedIn</a>
+          <br>
+          <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
+          <br>
+          <a href="tel:+7606726004">+(760)-672-6004</a>
+        </address>
+      </aside>
 
     <hr>
 
