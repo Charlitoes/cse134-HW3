@@ -201,10 +201,7 @@ footer {
     math {
         font-size: 3vw;
     }
-}
 
-/* Responsive: Sidebar moves below main content on smaller screens */
-@media (max-width: 1024px) {
     aside {
         position: static; /* Default positioning */
         width: 75%; /* Full width for mobile */
@@ -216,6 +213,10 @@ footer {
     aside h2 {
         font-size: 6vw;
     }
+}
+
+/* tablet/laptop breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
 
     address a {
         font-size: 4.5vw;

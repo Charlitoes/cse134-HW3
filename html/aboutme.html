@@ -10,6 +10,7 @@
     <link rel="icon" href="/assets/computer-icon.png">
     <link rel="stylesheet" href="/css/profile-card.css">
     <link rel="stylesheet" href="/css/stylesheet_main.css">
+    <link rel="stylesheet" href="/css/aboutme.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
       </noscript>
 
 
-      <section id="top">
+    <section id="top">
     <!-- UCSD logo and some backup images incase if one doesnt load -->
     <picture>
         <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
@@ -53,7 +54,7 @@
     
     <!-- main content of this page -->
     <main>
-        <h1>About Me</h1>
+        <h2><u>About Me</u></h2>
 
         <!-- use a custom html tag called profile-card to make the css profile card for myself -->
         <section class="profile">
@@ -72,7 +73,7 @@
 
         <!-- use svg to create a timeline of my education -->
         <div class="Timeline">
-            <svg width="500" height="100">
+            <svg viewBox="0 0 500 100" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: auto;">
                 <!-- Timeline Line -->
                 <line x1="50" y1="50" x2="450" y2="50" stroke="gray" stroke-width="2"/>
             
@@ -90,13 +91,13 @@
 
         <!-- used blockquote tag to write out this code as well as kbd tag to type out keyboard presses -->
         <blockquote>
-            "It's all <kbd>ctrl</kbd> + <kbd>c</kbd> and <kbd>ctrl</kbd> + <kbd>v</kbd> until something explodes"
+            <p>"It's all <kbd>ctrl</kbd> + <kbd>c</kbd> and <kbd>ctrl</kbd> + <kbd>v</kbd> until something explodes"</p>
             <cite>— Random Computer Scientist</cite>
         </blockquote>
 
         <!-- section to talk about my personality -->
         <section class="Enjoyments">
-            <h2>Some things I enjoy</h2>
+            <h2><u>Some things I enjoy</u></h2>
             <ul>
                 <li><p>I love to <strong>learn new things</strong></p></li>
                 <li><p><strong>Solving problems</strong> and finding more <strong>efficent solutions</strong></p></li>
@@ -106,23 +107,28 @@
 
         <!-- section to talk about my hobbies -->
         <section class="Hobbies">
-            <h2>Hobbies</h2>
-                <details>
-                    <summary>Job searching</summary>
+            <h2><u>Hobbies</u></h2>
+            <details>
+                <summary>Job searching</summary>
+                <div class="details-content">
                     <p>Still looking!</p>
-                </details>
-            
-                <details>
-                    <summary>Listening to music (currently my favorite song)</summary>
-                    <!-- removed style for this iframe width="350" height="152" this was the dimensions so i can use them in the future -->
-                    <iframe src="https://open.spotify.com/embed/track/30oddeV4b75MDQ6JvkAXCW?utm_source=generator"></iframe>
-                </details>
-                
-                <details>
-                    <summary>Playing video games</summary>
+                </div>
+            </details>
+        
+            <details>
+                <summary>Listening to music (currently my favorite song)</summary>
+                <div class="details-content">
+                    <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/track/30oddeV4b75MDQ6JvkAXCW?utm_source=generator" frameborder="0" width="50%" height="152px" allowfullscreen=""></iframe>
+                </div>
+            </details>
+        
+            <details>
+                <summary>Playing video games</summary>
+                <div class="details-content">
                     <p>Final Fantasy</p>
-                    <p>Minecraft</p>
-                </details>
+                    <p class="minecraft">Minecraft</p>
+                </div>
+            </details>
         </section>
     </main>
     <hr>

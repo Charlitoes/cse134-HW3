@@ -1,0 +1,15 @@
+img.programming{
+    height: 100px;
+    width: auto;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 767px) {
+
+
+}
+
+/* tablet/laptop breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
