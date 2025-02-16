@@ -74,6 +74,10 @@ h2 {
 
 /* Media Queries for Mobile Screens */
 @media (max-width: 767px) {
+    h2 {
+        font-size: 6vw;
+    }
+    
     .Timeline text {
         font-size: 3.5vw; /* Scale text size based on viewport width */
     }
