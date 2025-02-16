@@ -1,3 +1,7 @@
+main *{
+    background-color: white;
+}
+
 .profile{
     display: flex;
     justify-content: center;
@@ -30,7 +34,6 @@
 .Enjoyments ul li {
     margin-bottom: 10px; /* Adds space between list items */
 }
-
 
 .Hobbies{
     display: flex;

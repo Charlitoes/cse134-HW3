@@ -1,3 +1,7 @@
+main *{
+    background-color: white;
+}
+
 img.programming{
     height: 100px;
     width: auto;

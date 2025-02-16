@@ -1,17 +1,35 @@
+/* Global Variables */
+:root {
+    --primary-color: #0073e6;
+    --secondary-color: #ff6600;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+    --nav-link-color: black;
+    --nav-link-hover: var(--primary-color, #0073e6);
+    --card-background: white;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --code-background: #333;
+    --code-text: #fff;
+    --sidebar-background: #e3f2fd;
+}
+
 /* global styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-family, sans-serif);
+    background-color: #222;
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #222;
+    color: var(--text-color,#333);
     text-align: center;
     padding: 2vh;
     font-size: 1.2vw;
+
 }
 
 /* header style */
@@ -20,6 +38,7 @@ section#top header{
     display: flex;
     justify-content: center;
     align-items: center; 
+    color: white;
 }
 
 section#top{
@@ -43,6 +62,7 @@ nav {
     padding: 2vh 0;
     display: flex;
     justify-content: center; 
+    
 }
 
 nav ul{
@@ -59,14 +79,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: var(--nav-link-color, black);
     font-size: 3vh;
     padding: 10px 15px;
     transition: 0.3s ease-in-out;
+    color: white;
+    b {
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
 }
 
 nav ul li a:hover {
-    color: #0073e6; /* Change color on hover */   
+    color: var(--nav-link-hover, #0073e6); /* Change color on hover */   
 }
 
 
@@ -74,26 +99,36 @@ nav ul li a:hover {
 main {
     max-width: 1024px;
     margin: 30px auto;
-    background: white;
+    background: var(--card-background, white);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--card-shadow, (0, 0, 0, 0.1));
+}
+
+hgroup {
+    background-color: var(--background-color, white);
+}
+
+hgroup *{
+    background-color: var(--background-color, white);
 }
 
 hgroup h1 {
     font-size: 38px;
     margin-bottom: 10px;
+    background-color: var(--background-color, white);
 }
 
 hgroup p {
     font-size: 28px;
     padding: 10px;
+    background-color: var(--background-color, white);
 }
 
 /* Code Block */
 pre {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--code-background, #333);
+    color: var(--code-text, #fff);
     padding: 10px;
     border-radius: 5px;
     font-size: 24px;
@@ -101,10 +136,8 @@ pre {
     text-align: left;
 }
 
-/* math style */
-
-math {
-    font-size: 24px;
+pre code {
+    background-color: var(--code-background, #333);
 }
 
 /* Sidebar */
@@ -114,7 +147,7 @@ aside {
     top: 50%;
     transform: translateY(-50%);
     width: 16vw;
-    background: #e3f2fd;
+    background: var(--sidebar-background, #e3f2fd);
     padding: 2vh;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -124,20 +157,26 @@ aside {
 aside h2 {
     font-size: 2vw;
     margin-bottom: 1vh;
-    color: #222;
+    color: var(--text-color, #222);
+    background: var(--sidebar-background, #e3f2fd);
+}
+
+address{
+    background: var(--sidebar-background, #e3f2fd);
 }
 
 address a {
     display: block;
-    color: #0073e6;
+    color: var(--primary-color, #0073e6);
     font-size: 1.25vw;
     margin: 1vh 0;
     text-decoration: none;
     transition: color 0.3s;
+    background: var(--sidebar-background, #e3f2fd);
 }
 
 address a:hover {
-    color: #ff6600;
+    color: var(--secondary-color, #ff6600);
 }
 
 /* Footer */
@@ -146,6 +185,7 @@ footer {
     margin-top: 30px;
     font-size: 18px;
     border-radius: 5px;
+    color: white;
 }
 
 /* Media Queries for Mobile Screens */
@@ -219,7 +259,7 @@ footer {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     address a {
-        font-size: 4.5vw;
+        font-size: 3vw;
     }
 
     aside {
@@ -228,6 +268,10 @@ footer {
         margin: 20px auto; /* Centers it */
         text-align: center; /* Aligns content */
         margin-top: 40dvw;
+    }
+
+    aside h2{
+        font-size: 5vw;
     }
 }
 
