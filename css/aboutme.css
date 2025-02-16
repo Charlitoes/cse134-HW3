@@ -2,6 +2,10 @@ main *{
     background-color: white;
 }
 
+h2 {
+    font-size: 38px;
+}
+
 .profile{
     display: flex;
     justify-content: center;
