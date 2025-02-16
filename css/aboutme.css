@@ -21,55 +21,54 @@ h2 {
 }
 
 /* style for what I enjoy doing */
-.Enjoyments{
+.Enjoyments {
     padding: 30px;
     margin-bottom: 20px;
     font-size: 1.2vw;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
 }
 
-.Enjoyments h2{
-    margin-bottom: 20px;
-}
-.Enjoyments ul{
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.Enjoyments ul li {
-    margin-bottom: 10px; /* Adds space between list items */
-}
-
-.Hobbies{
+.Hobbies {
     display: flex;
     flex-direction: column;
-}
-.Hobbies h2{
-    margin-bottom: 15px;
-}
 
-.Hobbies details{
-    padding: 10px;
-    margin: 0;
-}
+    h2 {
+        margin-bottom: 15px;
+    }
 
-.Hobbies details summary{
-    padding-bottom: 10px;
-}
-.Hobbies iframe {
-    margin: 0;
-    padding: 0;
-    border: none; /* Remove border if not needed */
-    height: 150px;
-}
+    details {
+        padding: 10px;
+        margin: 0;
 
-.Hobbies details p.minecraft:hover{
-    color: green;
-}
+        summary {
+            padding-bottom: 10px;
+        }
 
-.Hobbies iframe{
-    border-radius: 12px;   
-    width: 50%; 
-    height: 152px 
+        p.minecraft:hover {
+            color: green;
+        }
+    }
+
+    iframe {
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 12px;   
+        width: 50%; 
+        height: 152px;
+    }
 }
 
 /* Media Queries for Mobile Screens */

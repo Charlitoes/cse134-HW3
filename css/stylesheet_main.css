@@ -62,36 +62,36 @@ nav {
     padding: 2vh 0;
     display: flex;
     justify-content: center; 
-    
-}
 
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center; 
-    gap: 3vw;
-    flex-wrap: wrap; 
-}
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center; 
+        gap: 3vw;
+        flex-wrap: wrap; 
 
-nav ul li {
-    display: inline-block;
-}
+        li {
+            display: inline-block;
 
-nav ul li a {
-    text-decoration: none;
-    font-family: "Lucida Console", "Courier New", monospace;
-    color: var(--nav-link-color, black);
-    font-size: 3vh;
-    padding: 10px 15px;
-    transition: 0.3s ease-in-out;
-    color: white;
-    b {
-        font-family: "Lucida Console", "Courier New", monospace;
+            a {
+                text-decoration: none;
+                font-family: "Lucida Console", "Courier New", monospace;
+                color: var(--nav-link-color, black);
+                font-size: 3vh;
+                padding: 10px 15px;
+                transition: 0.3s ease-in-out;
+                color: white;
+
+                b {
+                    font-family: "Lucida Console", "Courier New", monospace;
+                }
+
+                &:hover {
+                    color: var(--nav-link-hover, #0073e6); /* Change color on hover */   
+                }
+            }
+        }
     }
-}
-
-nav ul li a:hover {
-    color: var(--nav-link-hover, #0073e6); /* Change color on hover */   
 }
 
 
@@ -107,22 +107,22 @@ main {
 
 hgroup {
     background-color: var(--background-color, white);
-}
 
-hgroup *{
-    background-color: var(--background-color, white);
-}
+    * {
+        background-color: var(--background-color, white);
+    }
 
-hgroup h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-    background-color: var(--background-color, white);
-}
+    h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        background-color: var(--background-color, white);
+    }
 
-hgroup p {
-    font-size: 28px;
-    padding: 10px;
-    background-color: var(--background-color, white);
+    p {
+        font-size: 28px;
+        padding: 10px;
+        background-color: var(--background-color, white);
+    }
 }
 
 /* Code Block */
@@ -134,12 +134,10 @@ pre {
     font-size: 24px;
     overflow-x: auto;
     text-align: left;
+    code {
+        background-color: var(--code-background, #333);
+    }
 }
-
-pre code {
-    background-color: var(--code-background, #333);
-}
-
 /* Sidebar */
 aside {
     position: fixed; /* Sticks to the side */
@@ -152,31 +150,28 @@ aside {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-
-aside h2 {
-    font-size: 2vw;
-    margin-bottom: 1vh;
-    color: var(--text-color, #222);
-    background: var(--sidebar-background, #e3f2fd);
+    h2 {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+        color: var(--text-color, #222);
+        background: var(--sidebar-background, #e3f2fd);
+    }
 }
 
 address{
     background: var(--sidebar-background, #e3f2fd);
-}
-
-address a {
-    display: block;
-    color: var(--primary-color, #0073e6);
-    font-size: 1.25vw;
-    margin: 1vh 0;
-    text-decoration: none;
-    transition: color 0.3s;
-    background: var(--sidebar-background, #e3f2fd);
-}
-
-address a:hover {
-    color: var(--secondary-color, #ff6600);
+    a{
+        display: block;
+        color: var(--primary-color, #0073e6);
+        font-size: 1.25vw;
+        margin: 1vh 0;
+        text-decoration: none;
+        transition: color 0.3s;
+        background: var(--sidebar-background, #e3f2fd);
+        &:hover {
+            color: var(--secondary-color, #ff6600);
+        }
+    }
 }
 
 /* Footer */
@@ -213,8 +208,8 @@ footer {
         max-width: 30vw; /* Scale UCSD logo properly */
     }
 
-    aside h2, address a {
-        font-size: 3vw;
+    address a {
+        font-size: 4vw;
     }
 
     footer {
@@ -235,12 +230,6 @@ footer {
     pre {
         font-size: 3vw;
     }
-    
-    /* math style */
-    
-    math {
-        font-size: 3vw;
-    }
 
     aside {
         position: static; /* Default positioning */
@@ -248,10 +237,9 @@ footer {
         margin: 20px auto; /* Centers it */
         text-align: center; /* Aligns content */
         margin-top: 40dvw;
-    }
-
-    aside h2 {
-        font-size: 6vw;
+        h2{
+            font-size: 6vw;
+        }
     }
 }
 
@@ -261,17 +249,15 @@ footer {
     address a {
         font-size: 3vw;
     }
-
     aside {
         position: static; /* Default positioning */
         width: 75%; /* Full width for mobile */
         margin: 20px auto; /* Centers it */
         text-align: center; /* Aligns content */
         margin-top: 40dvw;
-    }
-
-    aside h2{
-        font-size: 5vw;
+        h2{
+            font-size: 5vw;
+        }
     }
 }
 
