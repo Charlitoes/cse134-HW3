@@ -6,7 +6,7 @@
     --text-color: #333;
     --font-family: 'Arial', sans-serif;
     --nav-link-color: black;
-    --nav-link-hover: var(--primary-color, #0073e6);
+    --nav-link-hover: purple;
     --card-background: white;
     --card-shadow: rgba(0, 0, 0, 0.1);
     --code-background: #333;
@@ -88,7 +88,7 @@ nav {
                 }
 
                 &:hover {
-                    color: var(--nav-link-hover, #0073e6); /* Change color on hover */   
+                    color: var(--nav-link-hover, (in oklab, red 50%, blue 50%)); /* Change color on hover */   
                 }
             }
         }
@@ -185,7 +185,7 @@ address {
         background: var(--sidebar-background, #e3f2fd);
 
         &:hover {
-            color: var(--secondary-color, #ff6600);
+            color: var(--secondary-color, color(display-p3 1 0.5 0));
         }
     }
 }
