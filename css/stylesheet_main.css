@@ -221,6 +221,14 @@ footer {
     address a {
         font-size: 4.5vw;
     }
+
+    aside {
+        position: static; /* Default positioning */
+        width: 75%; /* Full width for mobile */
+        margin: 20px auto; /* Centers it */
+        text-align: center; /* Aligns content */
+        margin-top: 40dvw;
+    }
 }
 
 

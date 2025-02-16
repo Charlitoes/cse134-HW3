@@ -1,6 +1,13 @@
 img.programming{
     height: 100px;
     width: auto;
+    margin-top: 10px;
+}
+
+img.gif{
+    height: 175px;
+    width: auto;
+    margin-top: 10px;
 }
 
 /* Media Queries for Mobile Screens */
@@ -10,6 +17,12 @@ img.programming{
         width: auto;
     }
 
+    img.gif{
+        height: 125px;
+        width: auto;
+    }
+    
+
 }
 
 /* tablet/laptop breakpoint */
@@ -18,4 +31,10 @@ img.programming{
         height: 75px;
         width: auto;
     }
+
+    img.gif{
+        height: 150px;
+        width: auto;
+    }
+    
 }
